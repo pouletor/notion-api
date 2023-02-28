@@ -1,0 +1,12 @@
+{
+  // See .editorconfig
+
+  "editor.formatOnSave": true,
+  // https://github.com/prettier/prettier-vscode
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+    "source.sortMembers": true
+  }
+}
