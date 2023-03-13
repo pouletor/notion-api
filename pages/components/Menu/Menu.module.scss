@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  flex: 1;
+  margin: 2rem;
+}
+
+.link {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  color: black;
+  font-weight: 600;
+  line-height: 1;
+
+  &:hover:not(.activeLink),
+  &:focus-visible {
+    background-color: rgba(83, 113, 149, 0.1);
+  }
+}
+
+.activeLink {
+  color: #51626f;
+  background-color: rgba(83, 113, 149, 0.2);
+}

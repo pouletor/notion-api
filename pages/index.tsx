@@ -3,7 +3,6 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import FetchButton from "./components/FetchButton/FetchButton";
-import Form from "./components/Form/Form";
 import Menu from "./components/Menu/Menu";
 
 export default function Home() {
@@ -18,8 +17,6 @@ export default function Home() {
       <Menu activeMenu="home" />
       <main className={styles.main}>
         <FetchButton />
-        <hr />
-        <Form />
       </main>
     </>
   );
