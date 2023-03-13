@@ -18,6 +18,11 @@ export default function Menu({ activeMenu }: Props) {
       name: "form",
       link: "/form",
     },
+    {
+      label: "Formulaire wedding",
+      name: "formWed",
+      link: "/formWed",
+    },
   ];
 
   return (
