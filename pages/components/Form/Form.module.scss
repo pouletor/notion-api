@@ -1,0 +1,50 @@
+.form {
+  label {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    text-align: right;
+    width: 30rem;
+    display: inline-block;
+  }
+  fieldset {
+    border-width: 1px;
+    border-color: rgba(34, 36, 38, 0.15);
+    border-radius: 0.4rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    padding: 1rem 1.4rem;
+    background: #ffffff;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    color: black;
+    border-radius: 0.4rem;
+    margin-top: 0.4rem;
+    font-size: 1.6rem;
+  }
+
+  input[type="number"] {
+    width: 7rem;
+  }
+
+  input[disabled] {
+    background-color: #efefef;
+    color: grey;
+  }
+
+  button[type="submit"] {
+    padding: 1rem 1.4rem;
+    background: #7c9de4;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    color: black;
+    margin: 2rem auto;
+    display: block;
+
+    &[disabled] {
+      background: #dbe3f5;
+    }
+  }
+}
