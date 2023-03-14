@@ -1,9 +1,8 @@
 import Head from "next/head";
 
+import Form from "../components/Form/Form";
+import Menu from "../components/Menu/Menu";
 import styles from "../styles/Home.module.css";
-
-import FormWed from "./components/FormWed/FormWed";
-import Menu from "./components/Menu/Menu";
 
 export default function Home() {
   return (
@@ -14,9 +13,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Menu activeMenu="formWed" />
+      <Menu activeMenu="form" />
       <main className={styles.main}>
-        <FormWed />
+        <Form />
       </main>
     </>
   );
