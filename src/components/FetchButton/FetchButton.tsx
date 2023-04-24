@@ -5,8 +5,8 @@ const CREATION_DATE_COLUMN = "Date de création";
 
 const getDDMMYYYY = (iso_date) => {
   const date = new Date(iso_date);
-  const day = date.getDay().toString().padStart(2, "0");
-  const month = date.getMonth().toString().padStart(2, "0");
+  const day = date.getDate().toString().padStart(2, "0");
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
   const year = date.getFullYear();
 
   return `${day}/${month}/${year}`;
@@ -41,6 +41,8 @@ export default function FetchButton() {
             {name}
             {" - "}
             {created_time}
+            {" - "}
+            {properties.favorite_number?.number}
           </div>
         );
       })}
