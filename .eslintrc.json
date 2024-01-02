@@ -26,12 +26,12 @@
       {
         "pathGroups": [
           {
-            "pattern": "react+(|-native)",
+            "pattern": "react",
             "group": "external",
             "position": "before"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["react", "react-native"],
+        "pathGroupsExcludedImportTypes": ["react"],
         "groups": [
           "builtin",
           "external",
