@@ -1,4 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is a starter to create a web application using [Next.js](https://nextjs.org/) and [Notion](https://www.notion.so) as a database. The connexion to Notion is made with [Notion API](https://developers.notion.com/docs/getting-started).
+
+## Setup
+
+1. You need a Notion account, if you don't have one, create yours on [https://www.notion.so/login](https://www.notion.so/login)
+
+2. [Create an integration](https://www.notion.so/my-integrations). We'll name it YOUR_INTEGRATION for the example, and copy the secret that will be YOUR_NOTION_KEY
+
+3. In notion, create a database with the following fields (if you want to match the actual code):
+
+- **email** with _email_ type,
+- **telephone** with _phone_number_ type,
+- **favorite_number** with _number_ type,
+- **weather** with _select_ type
+- **commentaires** with _text_ type
+
+4. In the settings of this database, go to add connections and select YOUR_INTEGRATION.
+
+5. Create an .env.local or .env file at the root of this projet with:
+
+```
+NOTION_KEY="YOUR_NOTION_KEY"
+NOTION_DATABASE_ID="YOUR_NOTION_DATABASE_ID"
+```
+
+- `YOUR_NOTION_KEY`: you can find it in [https://www.notion.so/my-integrations](https://www.notion.so/my-integrations), go check YOUR_INTEGRATION and its secret
+
+- `YOUR_NOTION_DATABASE_ID`: get the link of your database and copy the id https://www.notion.so/[NOTION_DATABASE_ID]?v=xxxxx
+
+Your database is now connected with your integration. You will be able to interract with this database using the Notion API.
 
 ## Getting Started
 
@@ -13,14 +42,6 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
